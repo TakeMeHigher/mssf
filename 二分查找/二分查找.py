@@ -39,7 +39,7 @@ All rights reserved.
 def efcz(li, target):
     low = 0
     high = len(li) - 1
-    while low <= high:
+    while low < high:
         mid = (low + high) // 2
         if li[mid] == target:
             return mid

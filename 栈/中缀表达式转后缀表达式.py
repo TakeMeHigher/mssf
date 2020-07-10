@@ -23,7 +23,6 @@ def prefix_to_postfix(str):
                 res = stack.pop()
                 data_list.append(res)
             stack.push(item)
-
         else:
             data_list.append(item)
 
