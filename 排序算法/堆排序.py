@@ -13,7 +13,6 @@ def build(li, i, n):
         max_index = i
         if 2 * i <= n and li[i] < li[2 * i]:
             max_index = 2 * i
-
         if 2 * i + 1 <= n and li[max_index] < li[2 * i + 1]:
             max_index = 2 * i + 1
         if max_index == i:
@@ -73,8 +72,11 @@ def add(li, item):
 
 aa = [0, 7, 5, 19, 8, 4, 1, 20, 13, 16]
 create(aa)
-# remove_max(aa)
+print(aa)
+remove_max(aa)
+print(aa)
 # px(aa)
-add(aa, 12)
+# add(aa, 12)
 px(aa)
 print(aa)
+# [0, 20, 16, 19, 13, 4, 1, 7, 5, 8]
