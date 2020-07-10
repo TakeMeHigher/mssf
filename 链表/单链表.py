@@ -267,18 +267,3 @@ if __name__ == '__main__':
     # n_list.k_reverse(3)
     # n_list.print_link_node()
     # n_list.length()
-"""
-姓名: 三和大神
-工作经验:两年
-擅长方向：
-python java 前端开发 个人比较喜欢研究中间件相关知识 如 docker redis nginx rabbitmq kafka mysql k8s celery等
-
-工作经历1： 北京**科技有限公司
-负责公司的web开发, 前后端服务都写，后端为python,前端为vue, 在这期间把我们组的服务全部实现容器化 用docker，
-docker，mysql，rabbitmq， celery接触的比较多
-
-工作经历2: 北京**证券公司
-服务web服务，以及量化相关需求，这期间逐渐接触金融知识，主要用
-python和Java提供服务，python负责数据的清洗以及分析，Java提供web服务
-redis mongodb, mysql 用的比较多 其他较少
-"""

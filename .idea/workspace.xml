@@ -5,9 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/链表/链表.py" line="135" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b8331b2-d2cf-4b3d-a507-26ba34dc9689" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9b8331b2-d2cf-4b3d-a507-26ba34dc9689" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,17 +25,65 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/二叉树/二叉堆.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="-284">
               <caret line="16" column="29" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/二叉树/er_tree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="35" column="34" selection-start-line="23" selection-start-column="3" selection-end-line="35" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/两数之和.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/无重复字符的最长字串.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-341" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/排序算法/堆排序.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/二分查找/二分查找递归.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/二叉树/二叉搜索树简单.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="647">
+              <caret line="132" selection-start-line="132" selection-end-line="132" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/二叉树/二叉查找树.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1">
+              <caret line="165" column="24" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -56,6 +102,7 @@
       <find>plot</find>
       <find>formula_format</find>
       <find>nan</find>
+      <find>掌阅</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -64,18 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="/var/folders/4p/z3dd8f3x1zg57ljszg09zdtm0000gn/T/leetcode/editor/cn/[2]两数相加.py" />
-        <option value="$PROJECT_DIR$/leetcode/两数之和.py" />
-        <option value="$PROJECT_DIR$/leetcode/两数相加.py" />
-        <option value="$PROJECT_DIR$/leetcode/无重复字符的最长字串.py" />
-        <option value="/var/folders/4p/z3dd8f3x1zg57ljszg09zdtm0000gn/T/leetcode/editor/cn/[3]无重复字符的最长子串.py" />
-        <option value="/var/folders/4p/z3dd8f3x1zg57ljszg09zdtm0000gn/T/leetcode/editor/cn/[4]寻找两个正序数组的中位数.py" />
-        <option value="$PROJECT_DIR$/单例模式/new、.py" />
-        <option value="$PROJECT_DIR$/单例模式/new.py" />
-        <option value="$PROJECT_DIR$/单例模式/类方法实现.py" />
-        <option value="$PROJECT_DIR$/单例模式/元类实现.py" />
-        <option value="$PROJECT_DIR$/二分查找.py" />
-        <option value="$PROJECT_DIR$/栈和队列/栈/stock.py" />
         <option value="$PROJECT_DIR$/栈和队列/栈/十进制转二进制.py" />
         <option value="$PROJECT_DIR$/栈和队列/栈/简单括号匹配问题(栈).py" />
         <option value="$PROJECT_DIR$/栈和队列/stock/简单括号匹配问题(栈).py" />
@@ -104,17 +139,29 @@
         <option value="$PROJECT_DIR$/排序算法/计数排序.py" />
         <option value="$PROJECT_DIR$/二分查找/查找第一个值等于给定值的元素.py" />
         <option value="$PROJECT_DIR$/二分查找/查找最后一个值等于给定值的元素.py" />
-        <option value="$PROJECT_DIR$/连续最大和.py" />
         <option value="$PROJECT_DIR$/二分查找/查找第一个大于等于给定值的元素.py" />
         <option value="$PROJECT_DIR$/二分查找/查找最后一个小于等于给定值的元素.py" />
         <option value="$PROJECT_DIR$/aa.py" />
-        <option value="$PROJECT_DIR$/排序算法/堆排序.py" />
-        <option value="$PROJECT_DIR$/二分查找/二分查找.py" />
         <option value="$PROJECT_DIR$/哈希/aa.py" />
         <option value="$PROJECT_DIR$/二叉树/二叉堆.py" />
         <option value="$PROJECT_DIR$/二叉树/二叉查找树.py" />
         <option value="$PROJECT_DIR$/二叉树/二叉搜索树简单.py" />
         <option value="$PROJECT_DIR$/栈/中缀表达式转后缀表达式.py" />
+        <option value="$PROJECT_DIR$/排序算法/堆排序.py" />
+        <option value="$PROJECT_DIR$/topk.py" />
+        <option value="$PROJECT_DIR$/两个队列实现一个堆栈.py" />
+        <option value="$PROJECT_DIR$/两个栈实现一个队列.py" />
+        <option value="$PROJECT_DIR$/二分查找/二分查找递归.py" />
+        <option value="$PROJECT_DIR$/二分查找/二分查找.py" />
+        <option value="$PROJECT_DIR$/连续最大和.py" />
+        <option value="$PROJECT_DIR$/斐波那契数列.py" />
+        <option value="$PROJECT_DIR$/排序算法/归并排序.py" />
+        <option value="$PROJECT_DIR$/排序算法/插入排序.py" />
+        <option value="$PROJECT_DIR$/排序算法/选择排序.py" />
+        <option value="$PROJECT_DIR$/排序算法/快排.py" />
+        <option value="$PROJECT_DIR$/排序算法/冒泡.py" />
+        <option value="$PROJECT_DIR$/排序算法/堆排序(heap).py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
       </list>
     </option>
   </component>
@@ -138,7 +185,7 @@
             <path>
               <item name="mssf" type="b2602c69:ProjectViewProjectNode" />
               <item name="mssf" type="462c0819:PsiDirectoryNode" />
-              <item name="二分查找" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mssf" type="b2602c69:ProjectViewProjectNode" />
@@ -553,16 +600,15 @@
       <workItem from="1589079080684" duration="2428000" />
       <workItem from="1590201062184" duration="59077000" />
       <workItem from="1594303907608" duration="6661000" />
-      <workItem from="1594349557403" duration="3104000" />
+      <workItem from="1594349557403" duration="3911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101874000" />
+    <option name="totallyTimeSpent" value="102681000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17155068" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -575,7 +621,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.12330198" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.15569489" />
       <window_info anchor="bottom" id="Python Console" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -617,14 +663,6 @@
     <SUITE FILE_PATH="coverage/$aa.coverage" NAME="aa Coverage Results" MODIFIED="1593528035868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/queue/栈.py" />
-    <entry file="file://$PROJECT_DIR$/队列/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/链表/链表排序.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -827,13 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/二分查找/二分查找递归.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/哈希/hashmap.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -876,31 +907,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/二叉树/er_tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="34" selection-start-line="23" selection-start-column="3" selection-end-line="35" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/排序算法/二叉堆.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/二叉树/二叉查找树.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3135">
-          <caret line="165" column="24" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/二叉树/二叉搜索树简单.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2508">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
         </state>
       </provider>
     </entry>
@@ -928,17 +938,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/排序算法/堆排序.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/二分查找/二分查找递归.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/二叉树/二叉搜索树简单.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/二叉树/er_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="34" selection-start-line="23" selection-start-column="3" selection-end-line="35" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/两数之和.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/无重复字符的最长字串.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-341" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/二叉树/二叉堆.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="-284">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/排序算法/堆排序.py">
+    <entry file="file://$PROJECT_DIR$/二叉树/二叉查找树.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+        <state relative-caret-position="1">
+          <caret line="165" column="24" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="24" />
         </state>
       </provider>
     </entry>
