@@ -16,8 +16,10 @@ def prefix_to_postfix(str):
         if item == '(':
             stack.push(item)
         elif item == ")":
-            while stack.peek() != '(':
-                data_list.append(stack.pop())
+            res = stack.pop()
+            while res != '(':
+                data_list.append(res)
+                res = stack.pop()
         elif item in prec.keys() and item != '(':
             while not stack.is_empty() and prec.get(item, 0) <= prec.get(stack.peek(), 0):
                 res = stack.pop()
@@ -32,5 +34,5 @@ def prefix_to_postfix(str):
     return " ".join(data_list)
 
 
-print(prefix_to_postfix("a * b + c * d"))
+# print(prefix_to_postfix("a * b + c * d"))
 print(prefix_to_postfix("( a + b ) * c - ( d - e ) * ( f + g )"))
