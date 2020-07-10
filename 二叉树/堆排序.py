@@ -87,7 +87,7 @@ class Heap(object):
         """
         self.items.insert(1, data)
         self.count += 1
-        self.build(1, self.count)
+        self.build_max_heap(1, self.count)
 
     def heap_sort_reverse(self):
         """
