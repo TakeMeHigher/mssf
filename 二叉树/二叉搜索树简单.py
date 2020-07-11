@@ -82,41 +82,46 @@ class Tree(object):
 
         # 存在两个字节点
         if p.left and p.right:
-            minp = p.right
-            if not minp.left:
-                p.data = minp.data
-                p.right = minp.right
-            else:
-                minpp = p
-                while minp.left:
-                    minpp = minp
-                    minp = minp.left
-                p.data = minp.data
-                minpp.left = minp.right
-            return
-
-        if p.left and not p.right:
-            if pp.left == p:
-                pp.left = p.left
-            else:
-                pp.right = p.left
-            return
-
-        if p.right and not p.left:
-            if pp.left == p:
-                pp.left = p.right
-            else:
-                pp.right = p.right
-            return
-
-        if not p.left and not p.right:
+            Tree.delete_has_both_child_node(current=p)
+        # 只有一个子节点
+        elif p.left or p.left:
+            Tree.have_one_child_node(p, pp)
+        else:
             if pp.left == p:
                 pp.left = None
             else:
                 pp.right = None
 
+    @staticmethod
+    def delete_has_both_child_node(current):
+        mc = current.right
+        if not mc.left:
+            current.data = mc.data
+            current.right = mc.right
+        else:
+            mp = current
+            while mc.left:
+                mp = mc
+                mc = mc.left
 
-ll = [1, 2, 3, 4, 5, 6, 6.1, 6.4, 7, 7.2, 8,]
+            current.data = mc.data
+            mp.right = mc.left
+
+    @staticmethod
+    def have_one_child_node(current, parent):
+        if current.left:
+            if parent.left == current:
+                parent.left = current.left
+            else:
+                parent.right = current.left
+        else:
+            if parent.left == current:
+                parent.left = current.right
+            else:
+                parent.right = current.right
+
+
+ll = [1, 2, 3, 4, 5, 6, 6.1, 6.4, 7, 7.2, 8]
 root = Node.create_tree(ll, 0, len(ll) - 1)
 tree = Tree()
 tree.root = root
