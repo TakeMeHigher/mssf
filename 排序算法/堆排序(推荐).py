@@ -111,6 +111,25 @@ class Heap(object):
             count -= 1
             self.build_max_heap(1, count)
 
+    @staticmethod
+    def top_k(k: int, data: list):
+        """
+        先用前k个元素建立一个小根堆 在用k到 -1 元素更堆顶比较 小于 忽略 大于 将 堆定节点的值替换伟该值然后调整堆
+        :param k:
+        :param data:
+        :return:
+        """
+        k_ll = data[1:k + 1]
+        heap_k = Heap()
+        heap_k.create_min_heap(k_ll)
+        heap_k.count = len(k_ll)
+        for i in data[k + 1:]:
+            if i > heap_k.items[1]:
+                heap_k.items[1] = i
+                heap_k.build_min_heap(1, heap_k.count)
+
+        return heap_k.items
+
 
 aa = [7, 5, 19, 8, 4, 1, 20, 13, 16]
 heap = Heap()
