@@ -111,8 +111,20 @@ class Heap(object):
             count -= 1
             self.build_max_heap(1, count)
 
+    @staticmethod
+    def top_k(k: int, data: list):
+        """
 
-aa = [7, 5, 19, 8, 4, 1, 20, 13, 16]
+        :param k:
+        :param data:
+        :return:
+        """
+        k_list = data[:k]
+        heap_k = Heap()
+        heap_k.create_min_heap(k_list)
+
+
+aa = [7, 8, 4, 1, 20, 13, 16]
 heap = Heap()
 heap.create_min_heap(aa)
 print(heap.items)
