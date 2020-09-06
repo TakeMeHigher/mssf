@@ -64,6 +64,8 @@ class Tree(object):
 
     def delete(self, data):
         p = self.root
+        if not p:
+            return
         pp = None
 
         while p and p.data != data:
@@ -72,8 +74,6 @@ class Tree(object):
                 p = p.left
             else:
                 p = p.right
-        if not p:
-            return
 
         # 删除的是跟节点
         if not pp:

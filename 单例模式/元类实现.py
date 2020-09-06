@@ -7,7 +7,7 @@ class Singleton(type):
     def __call__(cls, *args, **kwargs):
         with cls.lock:
             if not hasattr(cls, "_instance"):
-                cls._instance = super(Singleton, cls).__call__(*args, **kwargs)
+                cls._instance = type.__call__(cls, *args, **kwargs)
             return cls._instance
 
 

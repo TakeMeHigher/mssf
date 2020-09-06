@@ -1,5 +1,3 @@
-
-
 class Node():
     def __init__(self, item=None):
         self.item = item
@@ -35,7 +33,7 @@ class LinkList(object):
     def setItem(self, index, item):
         p = self.head
         count = 0
-        while count < index :
+        while count < index:
             p = p.next
             count += 1
         p.item = item
@@ -64,11 +62,54 @@ class LinkList(object):
     def qk(self, left, right):
         if left < right:
             mid = self.quicksortofloop(left, right)
-            self.qk(left, mid-1)
-            self.qk(mid+1, right)
+            self.qk(left, mid - 1)
+            self.qk(mid + 1, right)
+
+    def sort_list(self, head):
+        if not head or not head.next:
+            return head
+
+        slow, fast = head, head.next
+
+        while fast and fast.next:
+            slow, fast = slow.next, fast.next.next
+
+        mid = slow.next
+        slow.next = None
+
+        left = self.sort_list(head)
+        right = self.sort_list(mid)
+
+        h = res = Node(0)
+        while right and left:
+            if left.item < right.item:
+                h.next, left = left, left.next
+            else:
+                h.next, right = right, right.next
+            h = h.next
+
+        h.next = left if left else right
+        return res.next
+
+    def get_mid(self, head):
+        if not head:
+            return head
+        slow, fast = head, head.next
+        while fast and fast.next:
+            slow, fast = slow.next, fast.next.next
+        return slow
 
 
 if __name__ == "__main__":
     L = LinkList()
-    L.create([4, 2, 5, 3, 7, 9, 0, 1])
-    L.print()
+    L.create([4, 2, 5, 3, 7, 9, 0, 1,11])
+
+    # node = L.sort_list(L.head)
+    # print(node)
+    # L.head = node
+    # L.print()
+
+
+    print(L.get_mid(L.head).item)
+
+

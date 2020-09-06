@@ -5,6 +5,7 @@
 创建日期: 2019/2/13 14:14
 """
 
+
 def func(li):
     """
     :param li:
@@ -18,6 +19,13 @@ def func(li):
         if mic != i:
             li[i], li[mic] = li[mic], li[i]
 
+
 aa = [1,5,2,9,6,3,4]
 func(aa)
 print(aa)
+
+"""
+时间复杂度：O(n2)
+
+空间复杂度：O(1)
+"""

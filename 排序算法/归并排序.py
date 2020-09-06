@@ -50,9 +50,4 @@ def _merge_sort1(li, low, high):
         _merge_sort1(li, mid + 1, high)
 
 
-def merge_sort(li, mid, low, high):
-    i = low
-    j = mid + 1
-    ll = l
-
 
