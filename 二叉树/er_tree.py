@@ -1,4 +1,5 @@
-from  collections import deque
+from collections import deque
+
 
 class ErTree(object):
     def __init__(self):

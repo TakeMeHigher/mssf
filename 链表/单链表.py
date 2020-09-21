@@ -240,14 +240,14 @@ class LinkNodeList(object):
 
 
 
-if __name__ == '__main__':
-    ll = [1, 3, 2,1, 8, 4, 9, 11, 76]
-    n_list = LinkNodeList()
-    n_list.create_link(ll)
+# if __name__ == '__main__':
+#     ll = [1, 3, 2,1, 8, 4, 9, 11, 76]
+#     n_list = LinkNodeList()
+#     n_list.create_link(ll)
+#
+#     n_list.remove_last()
 
-    n_list.remove_last()
-
-    n_list.print_link_node()
+    # n_list.print_link_node()
 
     # print(n_list.find(4).data)
 
@@ -267,3 +267,38 @@ if __name__ == '__main__':
     # n_list.k_reverse(3)
     # n_list.print_link_node()
     # n_list.length()
+
+
+def merge(l1, l2):
+    l3 = LinkNodeList()
+    cur = LinkNode()
+    l3.head = cur
+
+    cur1 = l1.head
+    cur2 = l2.head
+
+    while cur1 and cur2:
+
+        if cur1.data <= cur2.data:
+            cur.next = cur1
+            cur1 = cur1.next
+        else:
+            cur.next = cur2
+            cur2 = cur2.next
+        cur = cur.next
+    cur.next = cur1 if cur1 else cur2
+    return l3
+
+
+if __name__ == '__main__':
+    ll1 = [1, 3, 6, 8, 9]
+    l1 = LinkNodeList()
+    l1.create_link(ll1)
+
+    ll2 = [2, 3, 5, 7, 8]
+    l2 = LinkNodeList()
+    l2.create_link(ll2)
+
+    l3 = merge(l1, l2)
+
+    l3.print_link_node()

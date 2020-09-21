@@ -10,12 +10,21 @@ class Singleton(object):
     def __new__(cls, *args, **kwargs):
         with cls.lock:
             if not hasattr(cls, "_instance"):
-                cls._instance = super(Singleton, cls).__new__(cls)
+                cls._instance = object.__new__(cls)
 
             return cls._instance
+
+
+class Child(Singleton):
+    def __init__(self):
+        Singleton.__init__(self)
 
 
 obj1 = Singleton()
 obj2 = Singleton()
 
 print(id(obj1) == id(obj2))
+
+ch1 = Child()
+ch2 = Child()
+print(id(ch1) == id(ch2))

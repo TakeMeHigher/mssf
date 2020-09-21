@@ -70,6 +70,8 @@ class Tree(object):
             return
 
         p = self.root
+        if not p:
+            return
         pp = None
 
         while p and p.data != data:
@@ -78,6 +80,11 @@ class Tree(object):
                 p = p.left
             else:
                 p = p.right
+
+        # 删除的是跟节点
+        if not pp:
+            self.root = None
+            return
 
         # 存在两个字节点
         if p.left and p.right:

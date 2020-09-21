@@ -5,7 +5,7 @@ def search(li, low, high, target):
             if mid == 0 or li[mid - 1] < target:
                 return mid
             else:
-                high = high - 1
+                high = mid - 1
         else:
             low = mid + 1
 

@@ -15,10 +15,10 @@ def func(li, left, right):
     """
     tmp = li[left]
     while left < right:
-        while left < right and li[right] <= tmp:
+        while left < right and li[right] >= tmp:
             right -= 1
         li[left] = li[right]
-        while left < right and li[left] >= tmp:
+        while left < right and li[left] <= tmp:
             left += 1
         li[right] = li[left]
 
@@ -42,10 +42,7 @@ def px(li, left, right):
 def top_k(li, low, high, k):
     if low < high:
         mid = func(li, low, high)
-        print(f'{mid}')
         if mid == k - 1:
-            print(mid)
-            print(li[mid])
             return mid
         elif mid < k - 1:
             top_k(li, mid + 1, high, k)
@@ -53,9 +50,9 @@ def top_k(li, low, high, k):
             top_k(li, low, mid, k)
 
 
-
-aa = [1, 5, 2, 9, 6,4,3, 4]
+aa = [1, 5, 2, 9, 6, 4, 3, 4]
 px(aa, 0, len(aa) - 1)
 print(aa)
 
-top_k(aa, 0, len(aa)-1, 8)
+bb = top_k(aa, 0, len(aa) - 1, 6)
+print(bb)

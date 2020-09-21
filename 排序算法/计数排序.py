@@ -10,6 +10,8 @@ def js(li):
         aa[i] = aa[i - 1] + aa[i]
 
     ss = [0] * len(li)
+    print(aa)
+    print(li)
     for i in li:
         index = aa[i] - 1
         ss[index] = i

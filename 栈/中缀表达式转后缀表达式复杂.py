@@ -2,6 +2,12 @@ from 栈 import Stack
 
 
 def prefix_to_postfix(str):
+    fu = {}
+    fu['{'] = 1
+    fu['['] = 2
+    fu['('] = 3
+    fu_s = "{[("
+    fu_r = "}])"
     prec = {}
     prec['+'] = 2
     prec['-'] = 2
@@ -9,14 +15,21 @@ def prefix_to_postfix(str):
     prec['/'] = 3
 
     stack = Stack()
+    stack_fu = Stack()
     data_list = []
     str_list = str.split()
     for item in str_list:
-        if item == '(':
+        if item in fu_s:
             stack.push(item)
-        elif item == ")":
+            stack_fu.push(item)
+        elif item in fu_r:
+            if stack_fu.is_empty():
+                raise ValueError("表达式错误")
+            if not match(item, stack_fu.peek()):
+                raise ValueError("表达式错误")
+            stack_fu.pop()
             res = stack.pop()
-            while res != '(':
+            while res != :
                 data_list.append(res)
                 res = stack.pop()
         elif item in prec.keys():
@@ -31,6 +44,13 @@ def prefix_to_postfix(str):
         data_list.append(stack.pop())
 
     return " ".join(data_list)
+
+
+def match(res, target):
+    aa = '([{'
+    bb = ')]}'
+
+    return aa.index(res) == bb.index(target)
 
 
 # print(prefix_to_postfix("a * b + c * d"))

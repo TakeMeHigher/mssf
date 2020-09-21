@@ -7,7 +7,6 @@ class LinkNode(object):
 class LruLinkNodeList(object):
     def __init__(self, size):
         self.head = None
-        self.size = 0
         self.data = set()
         self.size = size
         self.len = 0

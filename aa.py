@@ -1,21 +1,19 @@
-import copy
-a = [1, 2, 3, 4, ['a', [1,2]]]  #原始对象
-
-b = a  #赋值，传对象的引用
-c = copy.copy(a)  #对象拷贝，浅拷贝
-d = copy.deepcopy(a)  #对象拷贝，深拷贝
-
-a.append(5)  #修改对象a
-a[4].append('c')  #修改对象a中的['a', 'b']数组对象
-a[4][1].append(3)
-
-print('a = ', a)
-print('b = ', b)
-print( 'c = ', c)
-print('d = ', d)
+import sys
 
 
+# str = input()
+# print(str)
+def get_fix(li: list):
+    dic = {"count": 0}
+    first = li[0]
+    for i in range(1, len(li)):
+        all = True
+        if first[dic['count']] not in li[i]:
+            all = False
+        if all == True:
+            dic['count'] += 1
+    return first[: dic['count']]
 
 
-speed = (195.49-182.47)/182.47
-print(speed)
+print(get_fix(["fwler", "flow", "flight"]))
+
