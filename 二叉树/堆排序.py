@@ -134,7 +134,7 @@ class Heap(object):
 aa = [7, 5, 19, 8, 4, 1, 20, 13, 16, 10]
 heap = Heap()
 heap.create_min_heap(aa)
-# print(heap.items)
+print(heap.items)
 # # print(heap.count)
 # # heap.del_max()
 # # print(heap.items)

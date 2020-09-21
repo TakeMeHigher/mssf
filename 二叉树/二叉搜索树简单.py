@@ -63,6 +63,12 @@ class Tree(object):
                     p = p.right
 
     def delete(self, data):
+        if not self.root:
+            return
+        if self.root.data == data:
+            self.root = None
+            return
+
         p = self.root
         pp = None
 
@@ -72,13 +78,6 @@ class Tree(object):
                 p = p.left
             else:
                 p = p.right
-        if not p:
-            return
-
-        # 删除的是跟节点
-        if not pp:
-            self.root = None
-            return
 
         # 存在两个字节点
         if p.left and p.right:

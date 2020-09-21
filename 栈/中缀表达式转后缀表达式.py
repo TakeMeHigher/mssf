@@ -20,7 +20,7 @@ def prefix_to_postfix(str):
             while res != '(':
                 data_list.append(res)
                 res = stack.pop()
-        elif item in prec.keys() and item != '(':
+        elif item in prec.keys():
             while not stack.is_empty() and prec.get(item, 0) <= prec.get(stack.peek(), 0):
                 res = stack.pop()
                 data_list.append(res)
